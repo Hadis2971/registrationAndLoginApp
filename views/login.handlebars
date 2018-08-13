@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NodeJS Practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+        {{/if}}
+        {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+        {{/if}}
+        <form method="POST" action="/users/login">
+            <h1 style="font-weight:300;">Login Form</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </body>
+</html>
